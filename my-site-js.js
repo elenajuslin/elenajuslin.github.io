@@ -1,3 +1,4 @@
+var dataLayer = [];
 function dataLayer() {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
