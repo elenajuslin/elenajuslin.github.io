@@ -1,4 +1,4 @@
-(function datalayer-test() {
+(function datalayerTest() {
     var button = document.getElementById("datalayer-test");
     button.addEventListener("click", function() {
         window.dataLayer.push({
