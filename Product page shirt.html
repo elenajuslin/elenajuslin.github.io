@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>This is the page title</title>
+<title>Product page - shirt</title>
 <link rel="stylesheet" href="my-site-css.css">
 </head>
 <body>
-<h1></h1>
+<h1>Shirt</h1>
+<button type="button" id="cart-button" onclick="window.location.href='https://elenajuslin.github.io/cart'">See your cart</button>
 <p style="font-family:comic sans ms;">This is a simple webstore for demo purposes.</p>
-<!--Products-->
-<div id="product-card">
+<div>
     <img src="shirt.png">
     <p>100$</p>
     <!--<img src="https://cdn.pixabay.com/photo/2012/04/14/15/09/shirt-34238_960_720.png" alt="Shirt" id="shirt">-->
-    <button onclick="setShirtCookie()">Add to cart</button>
+    <button onclick="setCartCookie()">Add to cart</button>
 </div>
-<div id="product-card">
-    <img src="shirt.png">
-    <p>100$</p>
-    <!--<img src="https://cdn.pixabay.com/photo/2012/04/14/15/09/shirt-34238_960_720.png" alt="Shirt" id="shirt">-->
-    <button onclick="window.location.href='https://elenajuslin.github.io/cart'">Add to cart</button>
-</div>
-<!--Products end-->
 <button type="button" id="datalayer-test">Click here to test datalayer</button>
 
 

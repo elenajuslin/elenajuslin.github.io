@@ -1,3 +1,5 @@
+var products = getCookie("shirtInCart");
+
 // Create cookie
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
@@ -38,10 +40,18 @@ function acceptCookieConsent(){
     document.getElementById("cookieNotice").style.display = "none";
 }
 
-// The following code will check the cookie acceptance flag in JavaScript Cookies when the web page is loaded. If already accepted, it will hide the Cookie Consent Popup. Otherwise, the Cookie Consent Popup will be displayed.
+// The following code will check the cookie acceptance flag in JavaScript Cookies when the web page is loaded. 
+//If already accepted, it will hide the Cookie Consent Popup. Otherwise, the Cookie Consent Popup will be displayed.
 let cookie_consent = getCookie("user_cookie_consent");
 if(cookie_consent != ""){
     document.getElementById("cookieNotice").style.display = "none";
 }else{
     document.getElementById("cookieNotice").style.display = "block";
+}
+
+function setShirtCookie(shirtInCart, shirt, 1) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
