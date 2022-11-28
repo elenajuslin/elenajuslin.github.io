@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type = "text/javascript" src="my-site-js.js"></script>
+<script type = "text/javascript" src="cookie_consent.js"></script>
 <title>Shopping cart</title>
 </head>
 <body>
 <h1></h1>
 <p>You have added a product into cart</p>
-<script>document.write(products);</script>
+<script>//getCookie("cart")
+let cart = getCookie("cart")
+console.log("Cart: ", cart);
+</script>
+
 <div>
     <p>Click the button to buy.</p>
     <button onclick="window.location.href='https://elenajuslin.github.io/thank-you'">Continue</button>
