@@ -2,10 +2,16 @@
 <html>
 <head>
 <title>Thank you page</title>
+<script type = "text/javascript" src="purchase-datalayer.js"></script>
 </head>
 <body>
 <h1></h1>
 <p style="font-family:comic sans ms;">This is the final page.</p>
+<button id="purchasedatalayer">Purchase datalayer event</button>
+<script type="text/javascript">
+    var purchaseButton = document.getElementById("purchasedatalayer");
+    purchaseButton.addEventListener("click", purchasedatalayer);
+  </script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -14,7 +20,7 @@
     })(window,document,'script','dataLayer','GTM-5GVN3LW');</script>
     <!-- End Google Tag Manager -->
 <script type = "text/javascript" src="my-site-js.js"></script>
-<script type = "text/javascript" src="purchase-datalayer.js"></script>
+
 <script type = "text/javascript" src="cookie_consent.js"></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
-dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
-dataLayer.push({
+function purchasedatalayer() {
+    console.log("purchasedatalayer() function is being called");
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
   'ecommerce': {
     'purchase': {
       'actionField': {
@@ -22,4 +24,4 @@ dataLayer.push({
        }]
     }
   }
-});
+})};

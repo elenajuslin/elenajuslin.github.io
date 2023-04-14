@@ -3,6 +3,7 @@
 <head>
 <title>This is the page title</title>
 <link rel="stylesheet" href="my-site-css.css">
+<script type = "text/javascript" src="my-site-js.js"></script>
 </head>
 <body>
 <h1></h1>
@@ -21,7 +22,11 @@
     <button onclick="window.location.href='cart.html'">Add to cart</button>
 </div>
 <!--Products end-->
-<button type="button" id="datalayer-test">Click here to test datalayer</button>
+<button type="button" id="datalayerTest">Click here to test datalayer</button>
+<script type="text/javascript">
+    var addtocartButton = document.getElementById("datalayerTest");
+    addtocartButton.addEventListener("click", datalayerTest);
+  </script>
 
 
 <!--cookie notification popup begins-->
@@ -50,7 +55,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5GVN3LW');</script>
     <!-- End Google Tag Manager -->
-<script type = "text/javascript" src="my-site-js.js"></script>
 <script type = "text/javascript" src="cookie_consent.js"></script>
 </body>
 </html>
