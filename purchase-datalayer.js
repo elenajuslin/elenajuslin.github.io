@@ -2,7 +2,7 @@ function purchasedatalayer() {
     console.log("purchasedatalayer() function is being called");
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
-    'event': 'purchase',
+    'event': 'purchase',                         //testing
     'ecommerce': {
     'purchase': {
       'actionField': {
