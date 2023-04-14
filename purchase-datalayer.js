@@ -2,7 +2,8 @@ function purchasedatalayer() {
     console.log("purchasedatalayer() function is being called");
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
-  'ecommerce': {
+    'event': 'purchase'
+    'ecommerce': {
     'purchase': {
       'actionField': {
         'id': 'T12345',                         // Transaction ID. Required for purchases and refunds.
